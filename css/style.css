@@ -1,1 +1,122 @@
+.body {
+    background-image: url("images/asset 3.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 700px;
 
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    background-color: #eef4f1;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+
+.buttons .current {
+    background-color: #0032a0;
+}
+
+.header a {
+    flex: 1;
+    color: rgb(238, 244, 241);
+    background-color: #f90000;
+    text-decoration: none;
+    width: 100px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+
+
+
+}
+
+
+.logo {
+
+    width: 100px;
+    height: 100px;
+
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header .socials {
+    display: flex;
+}
+
+.header .socials img {
+    flex: 1;
+    width: 15px;
+    text-align: center;
+}
+
+.ornament {
+    margin-top: -30px;
+}
+
+.centerImage {
+    width: 100%;
+}
+
+.centerImage img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: #0032a0;
+    color: white;
+}
+
+.footer .logo {
+    flex: 1;
+    height: 100px;
+
+
+}
+
+.footer .adress {
+    flex: 2;
+    height: 100px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+
+}
+
+footer .adress a {
+    flex: 1;
+    align-items: center;
+
+}
+
+.footer .contact {
+    flex: 2;
+    height: 100px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.footer .socials {
+    flex: 2;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer .socials img {
+    width: 30px;
+    margin: 2px;
+}
