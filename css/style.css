@@ -6,34 +6,225 @@
 
 }
 
-.header {
-    display: flex;
+.topnav {
+    display: none;
     width: 100%;
-    background-color: #eef4f1;
-    justify-content: flex-start;
-    align-items: center;
+    height: 50px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 300;
 
 }
 
-
-
-.buttons .current {
-    background-color: #0032a0;
+.nav {
+    display: none;
+    width: 0%;
+    height: 0%;
 }
 
-.header a {
-    flex: 1;
-    color: rgb(238, 244, 241);
-    background-color: #f90000;
-    text-decoration: none;
+.logo {
     width: 100px;
-    margin: 5px;
-    padding: 5px;
+    position: fixed;
+    left: 2%;
+    display: inline;
+
+
+}
+
+.burgerContainer {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 200;
+
+
+}
+
+.burger {
+
+    overflow: hidden;
+    position: fixed;
+    right: 0%;
+    z-index: 200;
+    width: 100%;
+
+}
+
+.burger #myLinks {
+    display: none;
+}
+
+.popup {
+    margin-top: 20px;
     text-align: center;
+    background-color: #84B5C2;
+    margin-left: 5%;
+    margin-right: 5%;
+    z-index: 310;
+}
+
+.popup a {
+    margin-top: 20px;
+    text-align: center;
+    z-index: 310;
+}
+
+
+
+.burger a {
+    margin: 10px;
+    z-index: 300;
+    color: white;
+
+    height: 30px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.burger .current {
+
+    text-decoration: underline;
+}
+
+.burger a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.burger img {
+    width: 30px;
+}
+
+.burgerIcon {
+    float: right;
+
+    width: 30px;
+    z-index: 100;
+
+}
+
+.burger a:hover {
+    color: gray;
+    text-decoration: underline;
 
 
 
 }
+
+.burgerSocials {
+    display: inline-flex;
+
+
+
+
+}
+
+.burgerSocials img {
+    display: inline-flex;
+    width: 30px;
+
+}
+
+.margin {
+    background-color: #ddebee;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* code for line before and after text from https://www.geeksforgeeks.org/how-to-make-horizontal-line-with-words-in-the-middle-using-css/*/
+h1 {
+    display: flex;
+    flex-direction: row;
+}
+
+h1:before {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #357fbe;
+    margin: auto;
+}
+
+h1:after {
+    content: "";
+    flex: 3;
+    border-bottom: 2px solid #357fbe;
+    margin: auto;
+}
+
+
+
+
+.bubblesContainer {
+    display: flex;
+}
+
+.bubbles {
+    flex: 1;
+    background-color: #293452;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 15px 15px 0px 15px
+}
+
+.bubbles h2 {
+    margin-bottom: 20px;
+}
+
+.bubbles .link {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+.newsContainer {
+    display: flex;
+
+}
+
+.news {
+    flex: 1;
+}
+
+.news img {
+    width: 50%;
+    border-radius: 15px 15px 15px 15px
+}
+
+.article {
+    background-color: #293452;
+    margin: 10px;
+    color: white;
+    border-radius: 15px 15px 0px 15px
+}
+
+.eventContainer {
+    display: flex;
+}
+
+.event {
+    flex: 1;
+}
+
+.event img {
+    width: 100%;
+    border-radius: 15px 15px 15px 15px
+}
+
+.ev {
+    background-color: #357fbe;
+    margin: 10px;
+    color: white;
+    border-radius: 15px 15px 0px 15px
+}
+
+
+
 
 
 .logo {
@@ -57,9 +248,7 @@
     text-align: center;
 }
 
-.ornament {
-    margin-top: -30px;
-}
+
 
 .centerImage {
     width: 100%;
@@ -74,7 +263,7 @@
     align-items: center;
     width: 100%;
     height: 200px;
-    background-color: #0032a0;
+    background-color: #84B5C2;
     color: white;
 }
 
@@ -119,4 +308,134 @@ footer .adress a {
 .footer .socials img {
     width: 30px;
     margin: 2px;
+}
+
+
+@media (min-width: 768px) {
+    .profilePicture {
+
+        width: 30%;
+
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .nav .current {
+        color: #84B5C2;
+
+
+    }
+
+    .logo {
+        float: left;
+        width: 100px;
+        position: relative;
+        margin-right: 20px;
+        left: 2%;
+        display: inline;
+    }
+
+    .topnav {
+        display: block;
+        width: 100%;
+        height: 60px;
+        z-index: 300;
+    }
+
+    .nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+
+        width: 85%;
+        height: 50px;
+        overflow: hidden;
+
+
+    }
+
+
+
+    .pages a {
+        position: relative;
+        width: 10%;
+        margin: 5px;
+        float: left;
+        color: black;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 14px;
+
+    }
+
+    .pages a:hover {
+
+        color: #84B5C2;
+    }
+
+    /* Add a color to the active/current link */
+    .pages a.active {
+        color: #84B5C2;
+
+    }
+
+    .burger {
+        margin-top: 5px;
+    }
+
+    .Facebook {
+        float: right;
+        width: 25px;
+        background-color: black;
+        z-index: 101;
+        margin: 5px;
+        margin-right: 20px;
+        padding: 9px 10px;
+        text-align: center;
+        display: block;
+    }
+
+    .Insta {
+        float: right;
+        width: 25px;
+        background-color: black;
+        z-index: 101;
+        margin: 5px;
+        padding: 9px 10px;
+        text-align: center;
+        display: block;
+    }
+
+    .youtube {
+        float: right;
+        width: 25px;
+        background-color: black;
+        z-index: 101;
+        margin: 5px;
+        padding: 9px 10px;
+        text-align: center;
+        display: block;
+    }
+
+    .Linkedin {
+        float: right;
+        width: 25px;
+        background-color: black;
+        z-index: 101;
+        margin: 5px;
+        padding: 9px 10px;
+        text-align: center;
+        display: block;
+    }
+
+    .socials img {
+        height: 20px;
+    }
+
 }
