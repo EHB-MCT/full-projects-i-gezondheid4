@@ -57,6 +57,18 @@ p {
     text-align: center;
 }
 
+.social {
+    float: right;
+    width: 25px;
+    background-color: #293452;
+    z-index: 101;
+    margin: 5px;
+    padding: 9px 10px;
+    text-align: center;
+    display: block;
+    border-radius: 15px 15px 0px 15px;
+}
+
 .burgerContainer {
     width: 100%;
     height: 60px;
@@ -265,47 +277,13 @@ h1:after {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 200px;
+    height: 100px;
     background-color: white;
     color: #293452;
 }
 
-.footer .logo {
-    flex: 1;
-    height: 100px;
-
-
-}
-
-.footer .adress {
-    flex: 2;
-    height: 100px;
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-
-}
-
-footer .adress a {
-    flex: 1;
-    align-items: center;
-
-}
-
-.footer .contact {
-    flex: 2;
-    height: 100px;
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-}
-
 .footer .socials {
-    flex: 2;
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-    margin-top: 20px;
+    flex: 1;
 }
 
 .footer .socials img {
@@ -313,17 +291,33 @@ footer .adress a {
     margin: 2px;
 }
 
-.social {
-    float: right;
-    width: 25px;
-    background-color: #293452;
-    z-index: 101;
-    margin: 5px;
-    padding: 9px 10px;
+.stayConected {
+    flex: 1;
     text-align: center;
-    display: block;
-    border-radius: 15px 15px 0px 15px;
+
+
 }
+
+.stayConected h2 {
+    margin: 20px;
+
+}
+
+.partners {
+    flex: 1;
+
+}
+
+.partners img {
+
+    width: 30%;
+
+}
+
+
+/* end footer*/
+
+
 
 .socials img {
     height: 20px;
