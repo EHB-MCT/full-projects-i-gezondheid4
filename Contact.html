@@ -99,6 +99,41 @@
     <div class="margin">
 
         <!-- Hier kan je beginnen met content te plaatsen  -->
+        <div class="containerContact">
+            <form action="action_page.php">
+
+                <label for="fname">Voornaam</label>
+                <input type="text" id="fname" name="firstname" placeholder="Jouw naam..">
+
+                <label for="lname">Achternaam</label>
+                <input type="text" id="lname" name="lastname" placeholder="Jouw achternaam..">
+
+                <label for="email">Achternaam</label>
+                <input type="text" id="email" name="emailadres" placeholder="Jouw emailadres..">
+
+                <label for="edjucation">Opleiding</label>
+                <select id="edjucation" name="edjucation">
+                    <option value="-">-</option>
+                    <option value="VPK">Verpleegkunde</option>
+                    <option value="VK">Vroedkunde</option>
+                    <option value="VDK">Voedings- en dieetkunde</option>
+                    <option value="BMLT">Biomedische laboratoriumtechnologie</option>
+                    <option value="GK">Geneeskunde</option>
+                    <option value="REVAKI">Revalidatiewetenschappen en kinesistherapie</option>
+                    <option value="F">Farmacie</option>
+                    <option value="P">Psychologie</option>
+                    <option value="SA">Sociale agogiek</option>
+                </select>
+
+                <label for="subject">Omschrijving</label>
+                <textarea id="subject" name="subject"
+                    placeholder="Voeg zoveel mogelijk details toe waarmee het voor anderen eenvoudiger wordt om te reageren.."
+                    style="height:200px"></textarea>
+
+                <input type="submit" value="Plaats bericht">
+
+            </form>
+        </div>
 
 
     </div>
