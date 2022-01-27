@@ -1,11 +1,17 @@
-.body {
-    background-image: url("images/asset 3.svg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 700px;
+html {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
 
 }
 
+a {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Navigation */
 .topnav {
     display: none;
     width: 100%;
@@ -29,6 +35,20 @@
     display: inline;
 
 
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header .socials {
+    display: flex;
+}
+
+.header .socials img {
+    flex: 1;
+    width: 15px;
+    text-align: center;
 }
 
 .burgerContainer {
@@ -58,7 +78,7 @@
 .popup {
     margin-top: 20px;
     text-align: center;
-    background-color: #84B5C2;
+    background-color: #ddeaee;
     margin-left: 5%;
     margin-right: 5%;
     z-index: 310;
@@ -69,8 +89,6 @@
     text-align: center;
     z-index: 310;
 }
-
-
 
 .burger a {
     margin: 10px;
@@ -102,62 +120,43 @@
 
 .burgerIcon {
     float: right;
-
     width: 30px;
     z-index: 100;
-
 }
 
 .burger a:hover {
     color: gray;
     text-decoration: underline;
-
-
-
 }
 
 .burgerSocials {
     display: inline-flex;
-
-
-
-
 }
 
 .burgerSocials img {
     display: inline-flex;
     width: 30px;
+}
 
+/*Body*/
+.a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.a .href {
+    text-decoration: none;
 }
 
 .margin {
-    background-color: #ddebee;
+    background-color: #ddeaee;
+
     margin-left: 5%;
     margin-right: 5%;
 }
 
-/* code for line before and after text from https://www.geeksforgeeks.org/how-to-make-horizontal-line-with-words-in-the-middle-using-css/*/
-h1 {
-    display: flex;
-    flex-direction: row;
+.centerImage img {
+    width: 100%;
 }
-
-h1:before {
-    content: "";
-    flex: 1;
-    border-bottom: 2px solid #357fbe;
-    margin: auto;
-}
-
-h1:after {
-    content: "";
-    flex: 3;
-    border-bottom: 2px solid #357fbe;
-    margin: auto;
-}
-
-
-
 
 .bubblesContainer {
     display: flex;
@@ -176,9 +175,14 @@ h1:after {
     margin-bottom: 20px;
 }
 
+.bubbles .a {
+    text-decoration: none;
+}
+
 .bubbles .link {
     margin-top: 50px;
     margin-bottom: 20px;
+
 }
 
 
@@ -189,6 +193,7 @@ h1:after {
 
 .news {
     flex: 1;
+
 }
 
 .news img {
@@ -200,7 +205,12 @@ h1:after {
     background-color: #293452;
     margin: 10px;
     color: white;
-    border-radius: 15px 15px 0px 15px
+    border-radius: 15px 15px 0px 15px;
+    display: flex;
+}
+
+.article a {
+    margin: 10px;
 }
 
 .eventContainer {
@@ -223,40 +233,27 @@ h1:after {
     border-radius: 15px 15px 0px 15px
 }
 
-
-
-
-
-.logo {
-
-    width: 100px;
-    height: 100px;
-
-}
-
-.logo img {
-    width: 100%;
-}
-
-.header .socials {
+/* code for line before and after text from https://www.geeksforgeeks.org/how-to-make-horizontal-line-with-words-in-the-middle-using-css/*/
+h1 {
     display: flex;
+    flex-direction: row;
 }
 
-.header .socials img {
+h1:before {
+    content: "";
     flex: 1;
-    width: 15px;
-    text-align: center;
+    border-bottom: 2px solid #357fbe;
+    margin: auto;
 }
 
-
-
-.centerImage {
-    width: 100%;
+h1:after {
+    content: "";
+    flex: 3;
+    border-bottom: 2px solid #357fbe;
+    margin: auto;
 }
 
-.centerImage img {
-    width: 100%;
-}
+/*footer*/
 
 .footer {
     display: flex;
@@ -365,7 +362,7 @@ footer .adress a {
         width: 10%;
         margin: 5px;
         float: left;
-        color: black;
+        color: #293452;
         text-transform: uppercase;
         text-align: center;
         padding: 15px;
@@ -381,7 +378,7 @@ footer .adress a {
 
     /* Add a color to the active/current link */
     .pages a.active {
-        color: #84B5C2;
+        color: #357fbe;
 
     }
 
@@ -389,49 +386,16 @@ footer .adress a {
         margin-top: 5px;
     }
 
-    .Facebook {
+    .social {
         float: right;
         width: 25px;
-        background-color: black;
-        z-index: 101;
-        margin: 5px;
-        margin-right: 20px;
-        padding: 9px 10px;
-        text-align: center;
-        display: block;
-    }
-
-    .Insta {
-        float: right;
-        width: 25px;
-        background-color: black;
+        background-color: #293452;
         z-index: 101;
         margin: 5px;
         padding: 9px 10px;
         text-align: center;
         display: block;
-    }
-
-    .youtube {
-        float: right;
-        width: 25px;
-        background-color: black;
-        z-index: 101;
-        margin: 5px;
-        padding: 9px 10px;
-        text-align: center;
-        display: block;
-    }
-
-    .Linkedin {
-        float: right;
-        width: 25px;
-        background-color: black;
-        z-index: 101;
-        margin: 5px;
-        padding: 9px 10px;
-        text-align: center;
-        display: block;
+        border-radius: 15px 15px 0px 15px;
     }
 
     .socials img {
