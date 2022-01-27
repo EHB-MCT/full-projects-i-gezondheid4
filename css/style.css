@@ -11,6 +11,12 @@ a {
     color: white;
 }
 
+p {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
 /* Navigation */
 .topnav {
     display: none;
@@ -93,7 +99,7 @@ a {
 .burger a {
     margin: 10px;
     z-index: 300;
-    color: white;
+    color: #293452;
 
     height: 30px;
     text-decoration: none;
@@ -139,11 +145,11 @@ a {
 }
 
 /*Body*/
-.a {
+.p {
     font-family: 'Montserrat', sans-serif;
 }
 
-.a .href {
+.p .href {
     text-decoration: none;
 }
 
@@ -175,7 +181,7 @@ a {
     margin-bottom: 20px;
 }
 
-.bubbles .a {
+.bubbles .p {
     text-decoration: none;
 }
 
@@ -209,7 +215,7 @@ a {
     display: flex;
 }
 
-.article a {
+.article p {
     margin: 10px;
 }
 
@@ -260,8 +266,8 @@ h1:after {
     align-items: center;
     width: 100%;
     height: 200px;
-    background-color: #84B5C2;
-    color: white;
+    background-color: white;
+    color: #293452;
 }
 
 .footer .logo {
@@ -307,6 +313,21 @@ footer .adress a {
     margin: 2px;
 }
 
+.social {
+    float: right;
+    width: 25px;
+    background-color: #293452;
+    z-index: 101;
+    margin: 5px;
+    padding: 9px 10px;
+    text-align: center;
+    display: block;
+    border-radius: 15px 15px 0px 15px;
+}
+
+.socials img {
+    height: 20px;
+}
 
 @media (min-width: 768px) {
     .profilePicture {
@@ -386,20 +407,6 @@ footer .adress a {
         margin-top: 5px;
     }
 
-    .social {
-        float: right;
-        width: 25px;
-        background-color: #293452;
-        z-index: 101;
-        margin: 5px;
-        padding: 9px 10px;
-        text-align: center;
-        display: block;
-        border-radius: 15px 15px 0px 15px;
-    }
 
-    .socials img {
-        height: 20px;
-    }
 
 }
