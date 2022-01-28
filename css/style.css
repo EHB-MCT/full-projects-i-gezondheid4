@@ -271,6 +271,13 @@ h1:after {
     margin: auto;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
 /*contact page from https://www.w3schools.com/howto/howto_css_contact_form.asp/*
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],
