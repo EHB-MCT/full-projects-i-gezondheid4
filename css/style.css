@@ -494,3 +494,22 @@ input[type=submit]:hover {
 @media (min-width: 992px) {}
 
 @media (min-width: 1200px) {}
+
+.faseContaner {
+    display: flex;
+}
+
+.fase {
+    flex: 1;
+    background-color: #293452;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 10px;
+}
+
+.faseExplanation {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
