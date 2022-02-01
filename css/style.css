@@ -171,7 +171,7 @@ p {
     border-radius: 15px 15px 0px 15px
 }
 
-.bubbles h2 {
+.bubbles h3 {
     margin-bottom: 20px;
 }
 
@@ -226,19 +226,21 @@ p {
 }
 
 /* code for line before and after text from https://www.geeksforgeeks.org/how-to-make-horizontal-line-with-words-in-the-middle-using-css/*/
-h1 {
+h2 {
     display: flex;
     flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-h1:before {
+h2:before {
     content: "";
     flex: 1;
     border-bottom: 2px solid #357fbe;
     margin: auto;
 }
 
-h1:after {
+h2:after {
     content: "";
     flex: 3;
     border-bottom: 2px solid #357fbe;
@@ -574,10 +576,34 @@ input[type=submit]:hover {
         display: flex;
     }
 
+    .faseExplanation {
+        margin-top: 50px;
+    }
+
 }
 
 
 
 @media (min-width: 992px) {}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .margin {
+        background-color: #ddeaee;
+
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .flexContainer {
+        display: flex;
+    }
+
+    .news900 {
+        flex: 1;
+    }
+
+    .event900 {
+        flex: 1;
+    }
+
+}
