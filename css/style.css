@@ -358,6 +358,76 @@ input[type=submit]:hover {
 }
 
 /* end footer*/
+/*What is IPO page*/
+/*Flex structure */
+
+
+.IPOImage {
+    margin: 10px
+}
+
+.IPOImage img {
+    width: 100%;
+}
+
+/* Wat is IPO*/
+.whatIsIPO {
+    margin: 10px;
+    text-align: justify;
+
+}
+
+.whatIsIPO p {
+    color: #293452;
+}
+
+.whatIsIPO h2 {
+    margin-bottom: 10px;
+}
+
+/* Wie zijn we */
+.whoAreWe {
+    margin: 10px;
+    text-align: justify;
+}
+
+.whoAreWe h2 {
+    margin-bottom: 10px;
+}
+
+.whoAreWe p {
+    color: #293452;
+}
+
+.whoAreWe a {
+    color: #357fbe;
+}
+
+/* Fases */
+
+.fase {
+    flex: 1;
+    background-color: #293452;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 10px;
+    text-align: center;
+}
+
+.faseExplanation {
+    flex: 2;
+    margin: 10px;
+    padding: 10px;
+    color: #293452;
+}
+
+.faseExplanation p {
+    color: #293452;
+    text-align: justify;
+}
+
+
 
 /*contact page */
 .containerContact {
@@ -486,6 +556,23 @@ input[type=submit]:hover {
         font-size: 14px;
     }
 
+    /*What is IPO page*/
+    /*Flex structure */
+    .IPOContainer {
+        display: flex;
+    }
+
+    .IPO {
+        flex: 1;
+    }
+
+    .IPOImage {
+        flex: 1;
+    }
+
+    .faseContaner {
+        display: flex;
+    }
 
 }
 
@@ -494,22 +581,3 @@ input[type=submit]:hover {
 @media (min-width: 992px) {}
 
 @media (min-width: 1200px) {}
-
-.faseContaner {
-    display: flex;
-}
-
-.fase {
-    flex: 1;
-    background-color: #293452;
-    color: white;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px 10px 0px 10px;
-}
-
-.faseExplanation {
-    flex: 1;
-    margin: 10px;
-    padding: 10px;
-}
