@@ -364,7 +364,7 @@ h2 {
     flex-direction: row;
     margin-top: 30px;
     margin-bottom: 30px;
-    
+
 }
 
 h2:before {
@@ -589,7 +589,21 @@ input[type=submit]:hover {
 
 
 @media (min-width: 600px) {
+    a {
+        font-size: 14px;
+    }
 
+    p {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .info h2 {
+        font-size: 16px;
+    }
 
     .burger {
         display: none;
@@ -704,7 +718,8 @@ input[type=submit]:hover {
 @media (min-width: 768px) {
 
     .pages a {
-        font-size: 14px;
+        font-size: 18px;
+        padding: 10px;
     }
 
     /*What is IPO page*/
