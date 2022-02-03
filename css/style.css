@@ -32,6 +32,7 @@ p {
     height: 0%;
 }
 
+
 .logo {
     width: 100px;
     position: fixed;
@@ -146,6 +147,7 @@ p {
     width: 30px;
 }
 
+/* End Navigation */
 /*Body*/
 .p {
     font-family: 'Montserrat', sans-serif;
@@ -165,6 +167,8 @@ p {
 .centerImage img {
     width: 100%;
 }
+
+/* bubbles Homepage */
 
 .bubbles {
     flex: 1;
@@ -189,6 +193,9 @@ p {
 
 }
 
+/* end bubbles Homepage */
+
+/* latest news */
 .news {
     flex: 1;
 
@@ -211,8 +218,9 @@ p {
     margin: 10px;
 }
 
+/* end latest news */
 
-
+/* Events */
 .event {
     flex: 1;
 }
@@ -226,9 +234,15 @@ p {
     background-color: #357fbe;
     margin: 10px;
     color: white;
-    border-radius: 15px 15px 0px 15px
+    border-radius: 15px 15px 0px 15px;
+
 }
 
+.ev p {
+    padding-left: 10px;
+}
+
+/*end Events */
 /* code for line before and after text from https://www.geeksforgeeks.org/how-to-make-horizontal-line-with-words-in-the-middle-using-css/*/
 h2 {
     display: flex;
@@ -256,6 +270,7 @@ h2:after {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+
 }
 
 /*contact page from https://www.w3schools.com/howto/howto_css_contact_form.asp/*
@@ -436,9 +451,26 @@ input[type=submit]:hover {
 
 
 /*contact page */
-.containerContact {
+
+
+.form {
+
     padding: 70px;
 }
+
+.info {
+
+    padding: 70px;
+}
+
+.map img {
+    width: 100%;
+    border-radius: 70px 70px 0px 70px;
+
+}
+
+/* end contact page */
+
 
 @media (min-width: 600px) {
 
@@ -494,7 +526,7 @@ input[type=submit]:hover {
         padding: 8px;
         padding-top: 20px;
         text-decoration: none;
-        font-size: 10px;
+        font-size: 14px;
 
     }
 
@@ -584,6 +616,27 @@ input[type=submit]:hover {
         margin-top: 50px;
     }
 
+    .containerContact {
+        align-items: center;
+        display: flex;
+
+    }
+
+    .form {
+        flex: 1;
+
+    }
+
+    .info {
+        flex: 1;
+
+    }
+
+    .map img {
+        width: 100%;
+    }
+
+    /* end contact page */
 }
 
 
