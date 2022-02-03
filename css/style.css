@@ -612,6 +612,15 @@ input[type=submit]:hover {
         margin-top: 50px;
     }
 
+
+}
+
+
+
+@media (min-width: 992px) {
+
+
+    /* contact page */
     .containerContact {
         align-items: center;
         display: flex;
@@ -634,10 +643,6 @@ input[type=submit]:hover {
 
     /* end contact page */
 }
-
-
-
-@media (min-width: 992px) {}
 
 @media (min-width: 1200px) {
     .margin {
