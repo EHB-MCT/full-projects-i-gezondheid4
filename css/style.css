@@ -154,12 +154,16 @@ p {
 .margin {
     background-color: #ddeaee;
     padding: 2rem;
+    margin: 0 5rem;
 }
 
 .centerImage img {
     width: 100%;
 }
 
+.wrapper {
+    margin: 50px;
+}
 
 * {
     box-sizing: border-box
@@ -349,6 +353,10 @@ p {
     padding-left: 10px;
 }
 
+.news-content {
+    padding: 5px 15px;
+}
+
 /*end Events */
 /* code for line before and after text from https://www.geeksforgeeks.org/how-to-make-horizontal-line-with-words-in-the-middle-using-css/*/
 h2 {
@@ -356,6 +364,7 @@ h2 {
     flex-direction: row;
     margin-top: 30px;
     margin-bottom: 30px;
+    
 }
 
 h2:before {
@@ -480,6 +489,8 @@ input[type=submit]:hover {
 }
 
 /* end footer*/
+
+
 /*What is IPO page*/
 /*Flex structure */
 
@@ -493,6 +504,10 @@ input[type=submit]:hover {
 }
 
 /* Wat is IPO*/
+.whatIsIPO p {
+    font-size: 14px;
+}
+
 .whatIsIPO {
     margin: 10px;
     text-align: justify;
@@ -694,9 +709,6 @@ input[type=submit]:hover {
 
     /*What is IPO page*/
     /*Flex structure */
-    .IPOContainer {
-        display: flex;
-    }
 
     .IPO {
         flex: 1;
