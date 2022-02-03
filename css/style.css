@@ -1,8 +1,6 @@
 html {
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
-
-
 }
 
 body {
@@ -38,8 +36,6 @@ p {
     position: fixed;
     left: 2%;
     display: inline;
-
-
 }
 
 .logo img {
@@ -62,8 +58,6 @@ p {
     position: fixed;
     background-color: #ffffff;
     z-index: 200;
-
-
 }
 
 .burger {
@@ -73,7 +67,6 @@ p {
     right: 0%;
     z-index: 200;
     width: 100%;
-
 }
 
 .burger #myLinks {
@@ -116,7 +109,6 @@ p {
     position: absolute;
     right: 0;
     top: 0;
-
 }
 
 .burger .logo img {
@@ -161,9 +153,7 @@ p {
 
 .margin {
     background-color: #ddeaee;
-
-    margin-left: 5%;
-    margin-right: 5%;
+    padding: 2rem;
 }
 
 .centerImage img {
@@ -171,99 +161,113 @@ p {
 }
 
 
-* {box-sizing:border-box}
+* {
+    box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    position: relative;
+    margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #357fbe;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #357fbe;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #293452;
+.active,
+.dot:hover {
+    background-color: #293452;
 }
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 
@@ -290,7 +294,6 @@ p {
 .bubbles .link {
     margin-top: 50px;
     margin-bottom: 20px;
-
 }
 
 /* end bubbles Homepage */
@@ -298,12 +301,16 @@ p {
 /* latest news */
 .news {
     flex: 1;
+}
 
+.newsRight {
+    display: flex;
 }
 
 .news img {
     width: 50%;
-    border-radius: 15px 15px 15px 15px
+    border-radius: 15px 15px 15px 15px;
+    object-fit: cover;
 }
 
 .article {
@@ -312,6 +319,7 @@ p {
     color: white;
     border-radius: 15px 15px 0px 15px;
     display: flex;
+    min-height: 175px;
 }
 
 .article p {
@@ -335,7 +343,6 @@ p {
     margin: 10px;
     color: white;
     border-radius: 15px 15px 0px 15px;
-
 }
 
 .ev p {
@@ -435,13 +442,11 @@ input[type=submit]:hover {
 
 .footer .socials {
     flex: 1;
-    text-align: ;
 }
 
 .footer .socials img {
     width: 20px;
     margin: 0px;
-
 }
 
 .social {
@@ -459,18 +464,14 @@ input[type=submit]:hover {
 .stayConected {
     flex: 1;
     text-align: center;
-
-
 }
 
 .stayConected h2 {
     margin: 10px;
-
 }
 
 .partners {
     flex: 1;
-
 }
 
 .partners img {
@@ -495,7 +496,6 @@ input[type=submit]:hover {
 .whatIsIPO {
     margin: 10px;
     text-align: justify;
-
 }
 
 .whatIsIPO p {
@@ -524,8 +524,9 @@ input[type=submit]:hover {
     color: #357fbe;
 }
 
-/* Fases */
 
+
+/* Fases */
 .fase {
     flex: 1;
     background-color: #293452;
@@ -551,8 +552,6 @@ input[type=submit]:hover {
 
 
 /*contact page */
-
-
 .form {
 
     padding: 70px;
@@ -566,10 +565,12 @@ input[type=submit]:hover {
 .map img {
     width: 100%;
     border-radius: 70px 70px 0px 70px;
-
 }
 
 /* end contact page */
+
+
+
 
 
 @media (min-width: 600px) {
@@ -582,9 +583,6 @@ input[type=submit]:hover {
     .topnav .current {
         color: #84B5C2;
     }
-
-
-
 
 
     /* navigation bar */
@@ -746,9 +744,7 @@ input[type=submit]:hover {
 @media (min-width: 1200px) {
     .margin {
         background-color: #ddeaee;
-
-        margin-left: 15%;
-        margin-right: 15%;
+        padding: 2rem;
     }
 
     .flexContainer {
