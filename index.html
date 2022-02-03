@@ -95,36 +95,79 @@
 
 
     <div class="margin">
-        <div class="centerImage">
-            <img src="images/logo.svg">
-        </div>
-        <div class="bubblesContainer">
-            <div class="bubbles">
-                <h3>Agenda</h3>
-                <p>Webinar kwaliteitsverbetering zorg..</p>
-                <div class="link">
-                    <a href="#">Lees Verder</a>
-                </div>
-            </div>
-            <div class="bubbles">
-                <h3>Onderzoek</h3>
-                <p>Strategische thema's, onderzoekers..</p>
-                <div class="link">
-                    <a href="#">Lees Verder</a>
-                </div>
-            </div>
-            <div class="bubbles">
-                <h3>Vacatures</h3>
-                <p>Stageplekken, leren en werken.. </p>
-                <div class="link">
-                    <a href="#">Lees Verder</a>
-                </div>
-            </div>
-        </div>
-        <div class="flexContainer">
-            <div class="news900">
 
-                <h2>Latest News</h2>
+
+        <!-- Code found on w3schools > https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+        <!--Slideshow container-->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/IPO_uitreiking.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/IPO_uitstapje.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/IPO_bijeenkomst.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <br>
+
+
+        <div class="wrapper">
+
+            <div class="bubblesContainer">
+                <div class="bubbles">
+                    <h3>Agenda</h3>
+                    <p>Webinar kwaliteitsverbetering zorg..</p>
+                    <div class="link">
+                        <a href="#">Lees Verder</a>
+                    </div>
+                </div>
+                <div class="bubbles">
+                    <h3>Onderzoek</h3>
+                    <p>Strategische thema's, onderzoekers..</p>
+                    <div class="link">
+                        <a href="#">Lees Verder</a>
+                    </div>
+                </div>
+                <div class="bubbles">
+                    <h3>Vacatures</h3>
+                    <p>Stageplekken, leren en werken.. </p>
+                    <div class="link">
+                        <a href="#">Lees Verder</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="news900">
+
+            <h2>Latest News</h2>
+
+            <div class="wrapper">
                 <div class="newsContainer">
                     <div class="news">
                         <div class="article">
@@ -140,7 +183,8 @@
                                 voluptas aliquid cum </p>
                         </div>
                     </div>
-                    <div class="news">
+                    <div class="news newsRight">
+
                         <div class="article">
                             <img src="images/Therapist.jpg">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iure ullam nam
@@ -155,41 +199,52 @@
             <div class="event900">
                 <h2>Upcoming Events</h2>
 
-                <div class="eventContainer">
-                    <div class="event">
-                        <div class="ev">
-                            <img src="images/Pharmacy.jpg">
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p class="date">24 jan 2022</p>
+                <div class="wrapper">
+                    <div class="eventContainer">
+                        <div class="event">
+                            <div class="ev">
+                                <img class="events eventImage" src="images/Pharmacy.jpg">
+                                <div class="news-content">
+                                    <p>Lorem ipsum dolor sit amet</p>
+                                    <p class="date">24 jan 2022</p>
+                                </div>
+                            </div>
+                            <div class="ev">
+                                <img src="images/VERPLEEGKUNDE.jpg">
+                                <div class="news-content">
+                                    <p>Lorem ipsum dolor sit amet</p>
+                                    <p class="date">24 jan 2022</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ev">
-                            <img src="images/VERPLEEGKUNDE.jpg">
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p class="date">24 jan 2022</p>
-                        </div>
-                    </div>
-                    <div class="event">
-                        <div class="ev">
-                            <img src="images/Leerwerkplaats_EHB.jpg">
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p class="date">24 jan 2022</p>
-                        </div>
-                        <div class="ev">
-                            <img src="images/residents.jpg">
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p class="date">24 jan 2022</p>
+                        <div class="event">
+                            <div class="ev">
+                                <img src="images/Leerwerkplaats_EHB.jpg">
+                                <div class="news-content">
+                                    <p>Lorem ipsum dolor sit amet</p>
+                                    <p class="date">24 jan 2022</p>
+                                </div>
+                            </div>
+                            <div class="ev">
+
+                                <img src="images/residents.jpg">
+                                <div class="news-content">
+                                    <p>Lorem ipsum dolor sit amet</p>
+                                    <p class="date">24 jan 2022</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
+
+
+
+
         </div>
 
-
-
     </div>
-
-
     <script src="js/index.js"></script>
 
     <div class="footer">
@@ -244,7 +299,43 @@
                 x.style.display = "block";
             }
         }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
     </script>
+
+
+
 </body>
 
 </html>

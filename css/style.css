@@ -1,8 +1,10 @@
 html {
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
+}
 
-
+body {
+    line-height: 1.7;
 }
 
 a {
@@ -34,8 +36,6 @@ p {
     position: fixed;
     left: 2%;
     display: inline;
-
-
 }
 
 .logo img {
@@ -58,8 +58,6 @@ p {
     position: fixed;
     background-color: #ffffff;
     z-index: 200;
-
-
 }
 
 .burger {
@@ -69,7 +67,6 @@ p {
     right: 0%;
     z-index: 200;
     width: 100%;
-
 }
 
 .burger #myLinks {
@@ -112,7 +109,6 @@ p {
     position: absolute;
     right: 0;
     top: 0;
-
 }
 
 .burger .logo img {
@@ -144,6 +140,8 @@ p {
 }
 
 /* End Navigation */
+
+
 /*Body*/
 .p {
     font-family: 'Montserrat', sans-serif;
@@ -155,14 +153,128 @@ p {
 
 .margin {
     background-color: #ddeaee;
-
-    margin-left: 5%;
-    margin-right: 5%;
+    padding: 2rem;
+    margin: 0 5rem;
 }
 
 .centerImage img {
     width: 100%;
 }
+
+.wrapper {
+    margin: 50px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #357fbe;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #293452;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
 
 /* bubbles Homepage */
 
@@ -186,7 +298,6 @@ p {
 .bubbles .link {
     margin-top: 50px;
     margin-bottom: 20px;
-
 }
 
 /* end bubbles Homepage */
@@ -194,12 +305,16 @@ p {
 /* latest news */
 .news {
     flex: 1;
+}
 
+.newsRight {
+    display: flex;
 }
 
 .news img {
     width: 50%;
-    border-radius: 15px 15px 15px 15px
+    border-radius: 15px 15px 15px 15px;
+    object-fit: cover;
 }
 
 .article {
@@ -208,6 +323,7 @@ p {
     color: white;
     border-radius: 15px 15px 0px 15px;
     display: flex;
+    min-height: 175px;
 }
 
 .article p {
@@ -231,11 +347,14 @@ p {
     margin: 10px;
     color: white;
     border-radius: 15px 15px 0px 15px;
-
 }
 
 .ev p {
     padding-left: 10px;
+}
+
+.news-content {
+    padding: 5px 15px;
 }
 
 /*end Events */
@@ -245,6 +364,7 @@ h2 {
     flex-direction: row;
     margin-top: 30px;
     margin-bottom: 30px;
+    
 }
 
 h2:before {
@@ -331,13 +451,11 @@ input[type=submit]:hover {
 
 .footer .socials {
     flex: 1;
-    text-align: ;
 }
 
 .footer .socials img {
     width: 20px;
     margin: 0px;
-
 }
 
 .social {
@@ -355,18 +473,14 @@ input[type=submit]:hover {
 .stayConected {
     flex: 1;
     text-align: center;
-
-
 }
 
 .stayConected h2 {
     margin: 10px;
-
 }
 
 .partners {
     flex: 1;
-
 }
 
 .partners img {
@@ -375,6 +489,8 @@ input[type=submit]:hover {
 }
 
 /* end footer*/
+
+
 /*What is IPO page*/
 /*Flex structure */
 
@@ -388,10 +504,13 @@ input[type=submit]:hover {
 }
 
 /* Wat is IPO*/
+.whatIsIPO p {
+    font-size: 14px;
+}
+
 .whatIsIPO {
     margin: 10px;
     text-align: justify;
-
 }
 
 .whatIsIPO p {
@@ -420,8 +539,9 @@ input[type=submit]:hover {
     color: #357fbe;
 }
 
-/* Fases */
 
+
+/* Fases */
 .fase {
     flex: 1;
     background-color: #293452;
@@ -447,8 +567,6 @@ input[type=submit]:hover {
 
 
 /*contact page */
-
-
 .form {
 
     padding: 70px;
@@ -462,10 +580,12 @@ input[type=submit]:hover {
 .map img {
     width: 100%;
     border-radius: 70px 70px 0px 70px;
-
 }
 
 /* end contact page */
+
+
+
 
 
 @media (min-width: 600px) {
@@ -478,9 +598,6 @@ input[type=submit]:hover {
     .topnav .current {
         color: #84B5C2;
     }
-
-
-
 
 
     /* navigation bar */
@@ -592,9 +709,6 @@ input[type=submit]:hover {
 
     /*What is IPO page*/
     /*Flex structure */
-    .IPOContainer {
-        display: flex;
-    }
 
     .IPO {
         flex: 1;
@@ -647,9 +761,7 @@ input[type=submit]:hover {
 @media (min-width: 1200px) {
     .margin {
         background-color: #ddeaee;
-
-        margin-left: 15%;
-        margin-right: 15%;
+        padding: 2rem;
     }
 
     .flexContainer {
