@@ -10,7 +10,14 @@ body {
 a {
     font-size: 12px;
     text-decoration: none;
-    color: white;
+    color: #357fbe;
+}
+
+.bubbles a:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px 15px 0px 15px;
+    padding: 5px 10px;
+    font-size: 16px;
 }
 
 p {
@@ -171,6 +178,7 @@ p {
 
 /* Slideshow container */
 .slideshow-container {
+    max-width: 90%;
     position: relative;
     margin: auto;
 }
@@ -278,13 +286,18 @@ p {
 
 /* bubbles Homepage */
 
+.bubblesContainer {
+    justify-content: center;
+}
+
 .bubbles {
     flex: 1;
     background-color: #293452;
-    margin: 10px 15px 30px;
-    padding: 10px;
+    margin: 10px 50px 30px;
+    padding: 20px;
     color: white;
-    border-radius: 15px 15px 0px 15px
+    border-radius: 15px 15px 0px 15px;
+    max-width: 30vh;
 }
 
 .bubbles h3 {
@@ -328,11 +341,13 @@ p {
 
 .article p {
     margin: 10px;
+    padding: 15px;
 }
 
 /* end latest news */
 
 /* Events */
+
 .event {
     flex: 1;
 }
@@ -355,6 +370,7 @@ p {
 
 .news-content {
     padding: 5px 15px;
+
 }
 
 /*end Events */
@@ -364,7 +380,6 @@ h2 {
     flex-direction: row;
     margin-top: 30px;
     margin-bottom: 30px;
-
 }
 
 h2:before {
@@ -503,9 +518,33 @@ input[type=submit]:hover {
     width: 100%;
 }
 
+h1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+h1:before {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #357fbe;
+    margin: auto;
+}
+
+h1:after {
+    content: "";
+    flex: 3;
+    border-bottom: 2px solid #357fbe;
+    margin: auto;
+}
+
+
+
 /* Wat is IPO*/
 .whatIsIPO p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .whatIsIPO {
@@ -537,6 +576,7 @@ input[type=submit]:hover {
 
 .whoAreWe a {
     color: #357fbe;
+    font-size: 16px;
 }
 
 
@@ -562,6 +602,10 @@ input[type=submit]:hover {
 .faseExplanation p {
     color: #293452;
     text-align: justify;
+}
+
+.faseExplanation a {
+    font-size: 16px;
 }
 
 
